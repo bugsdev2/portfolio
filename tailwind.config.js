@@ -1,8 +1,19 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-    content: ['./src/**/*.{html,js,tsx,ts}'],
-    theme: {
-        extend: {},
-    },
-    plugins: [],
+module.exports = {
+  content: ["./*.{html,js,css}"],
+  theme: {
+    extend: {
+		fontFamily: {
+			roboto: ["Roboto"],
+			poppins: ["Poppins"],
+		},
+		colors: {
+			primary: "#0e7490",
+			primaryDark: "#06333f",
+			light: "#eaeaea",
+		},
+	},
+  },
+  plugins: [],
 };
+

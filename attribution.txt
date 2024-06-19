@@ -1,0 +1,8 @@
+Attribution
+
+HTML Icon (2 numbers) & Plain CSS Icon & JS Icon & Bootstrap Icon & React Icon & Nodejs Icon & TS Icon & Github Icon: <a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a>
+
+Split CSS Icon: <a href="https://www.flaticon.com/free-icons/css3" title="css3 icons">Css3 icons created by popcornarts - Flaticon</a>
+
+
+
