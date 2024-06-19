@@ -9,7 +9,7 @@
 </head>
 <body class="bg-light">
 	<div id="container">
-		<main class="h-[100vh] w-[100vw]">
+		<main id="home" class="h-[100vh] w-[100vw]">
 			<nav id="nav" class="flex justify-center mt-4">
 				<ul class="flex gap-8 md:gap-12 bg-primary py-1 px-16 md:px-24 rounded-full text-light uppercase">
 					<li><a href="#home">home</a></li>
@@ -33,10 +33,46 @@
 				</div>
 			</div>
 		</main>
-		<section class="w-[100vw] h-[100vh] leading-[240px] bg-primary">
-			<div class="select-none uppercase text-[300px] font-bold opacity-15 text-light">
+		<section id="about" class="w-[100vw] h-[100vh]  bg-primary text-light">
+			<div class="select-none uppercase text-[150px] md:text-[300px] font-bold opacity-15 text-light leading-[90px] md:leading-[190px] break-words tracking-tighter">
 				about
-			</div> 
+			</div>
+			<div class="p-4 md:p-20 tracking-widest grid gap-6 leading-loose">
+				<p>My journey into the world of web development began with a curiosity for how websites work
+				and a drive to create engaging digital experiences. Through self-study and formal education, I
+				have built a solid foundation in HTML, CSS, JavaScript, and the MERN stack (MongoDB,
+				Express.js, React, Node.js). My love for coding is matched only by my love for coffee—lots and
+				lots of coffee.</p>
+				<p>I've dedicated my time to learning and mastering the intricacies of web development, focusing
+				on creating dynamic and responsive web applications. I'm currently on the lookout for
+				freelance opportunities where I can bring your ideas to life (and maybe make a few bad jokes
+				along the way).</p>
+			</div>
+		</section>
+		<section id="technologies" class="w-[100vw] h-[100vh]  bg-light text-primary text-center">
+			<div class="select-none uppercase text-[150px] md:text-[300px] font-bold opacity-20 text-primary leading-[90px] md:leading-[190px] break-words tracking-tighter">
+				technologies
+			</div>
+			<div class="grid grid-cols-6 gap-5 px-10">
+				<img class="w-24" src="public/icons/html-5.png" alt="html" />
+				<img class="w-24" src="public/icons/css-3.png" alt="css" />
+				<img class="w-24" src="public/icons/js.png" alt="javascript" />
+				<img class="w-24" src="public/icons/bootstrap.png" alt="bootstrap" />
+				<img class="w-24" src="public/icons/tailwindcss.png" alt="tailwindcss" />
+				<img class="w-24" src="public/icons/mongodb.png" alt="mongodb" />
+				<img class="w-24" src="public/icons/expressjs.png" alt="expressjs" />
+				<img class="w-24" src="public/icons/react.png" alt="react" />
+				<img class="w-24" src="public/icons/node-js.png" alt="node-js" />
+				<img class="w-24" src="public/icons/npm.svg" alt="npm" />
+				<img class="w-24" src="public/icons/typescript.png" alt="typescript" />
+				<img class="w-24" src="public/icons/git-icon.png" alt="git" />
+				<img class="w-24" src="public/icons/github.png" alt="github" />
+				<img class="w-24" src="public/icons/vscode.png" alt="vscode" />
+				<img class="w-24" src="public/icons/geany.png" alt="geany" />
+				<img class="w-24" src="public/icons/penpot.png" alt="penpot" />
+				<img class="w-24" src="public/icons/postman.png" alt="postman" />
+				<img class="w-24" src="public/icons/vite.png" alt="vite" />
+			</div>
 		</section>
 	</div>
 	<script src="app.js" type="text/javascript"></script>
