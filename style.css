@@ -131,7 +131,6 @@ video {
     background: radial-gradient(ellipse closest-side, black, transparent);
     width: 125px;
     height: 10px;
-    z-index: 45;
 }
 
 @media screen and (max-width: 639px) {
