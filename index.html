@@ -1,287 +1,858 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
-	<link rel="stylesheet" href="output.css" />
-	<link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
-<body class="bg-light">
-	<div class="fixed bottom-5 left-3 text-2xl text-primaryDark bg-[rgba(234,234,234,0.5)] flex flex-col gap-3 py-4 px-1 rounded-full z-40">
-		<a title="GitHub" href="https://github.com/bugsdev2" target="_blank" rel="noopener noreferrer"><span class="bi bi-github" ></span></a>
-		<a title="LinkedIn" href="https://linkedin.com/in/adithya-m-pai-269437303" target="_blank" rel="noopener noreferrer"><span class="bi bi-linkedin"></span></a>
-		<a title="Mail" href="mailto:adithyamanikumar@proton.me"><span class="bi bi-envelope"></span></a>
-	</div>
-	<nav data-menu="menu" id="sm-screen-nav" class="hidden fixed top-0 left-0 bottom-0 bg-primary p-4 py-10 z-30">
-		<ul data-menu="menu" class="flex flex-col gap-3 uppercase text-light">
-			<li><a href="#home" data-menu="menu">home</a></li>
-			<li><a href="#about" data-menu="menu">about me</a></li>
-			<li><a href="#technologies" data-menu="menu">technologies</a></li>
-			<li><a href="#works" data-menu="menu">works</a></li>
-			<li><a href="#contact" data-menu="menu">contact</a></li>
-		</ul>
-	</nav>
-	<div id="container">
-		<main id="home" class="h-[100vh] w-[100vw] flex flex-col">
-			<nav id="nav" class="flex justify-center mt-4">
-				<button data-menu="menu" id="sm-menu-btn" class="sm:hidden fixed left-3 px-1 bg-[rgba(234,234,234,0.5)] rounded-full px-1 text-primary text-2xl z-20"><span data-menu="menu" class="bi bi-list"></span></button>
-				<ul class="fixed z-30 hidden sm:flex gap-8 md:gap-12 bg-primary py-1 px-16 md:px-24 rounded-full text-light uppercase">
-					<li><a href="#home">home</a></li>
-					<li><a href="#about">about me</a></li>
-					<li><a href="#technologies">technologies</a></li>
-					<li><a href="#works">works</a></li>
-					<li><a href="#contact">contact</a></li>
-				</ul>
-			</nav>
-			<div class="h-full flex justify-center items-center">
-				<div class="flex flex-col-reverse flex-reverse md:flex-row items-center justify-center gap-5 md:gap-24 mt-4 p-6">
-					<div class="text-primaryDark text-4xl flex flex-col gap-3">
-						<p>hi</p>
-						<p>i'm adithya</p>
-						<p>web developer</p>
-						<a id="contact-btn" class="btn-outline text-lg self-center mt-3" href="#contact">contact me</a>
-					</div>
-					<div class="w-1/2 md:w-1/3">
-						<img class="rounded-full" src="public/images/profilePic.jpg" alt="profile-picture-of-user" />
-					</div>
-				</div>
-			</div>
-		</main>
-		<section id="about" class="w-[100vw] min-h-[100vh] flex items-center bg-primary text-light">
-			<div class="absolute self-start w-[100vw] select-none uppercase text-[150px] md:text-[300px] font-bold opacity-15 text-light leading-[100px] md:leading-[190px] break-words tracking-tighter">
-				about
-			</div>
-			<div class="p-4 md:p-20 tracking-widest grid gap-6 leading-loose">
-				<p>My journey into the world of web development began with a curiosity for how websites work
-				and a drive to create engaging digital experiences. Through self-study and formal education, I
-				have built a solid foundation in HTML, CSS, JavaScript, and the MERN stack (MongoDB,
-				Express.js, React, Node.js). My love for coding is matched only by my love for coffee—lots and
-				lots of coffee.</p>
-				<p>I've dedicated my time to learning and mastering the intricacies of web development, focusing
-				on creating dynamic and responsive web applications. I'm currently on the lookout for
-				freelance opportunities where I can bring your ideas to life (and maybe make a few bad jokes
-				along the way).</p>
-			</div>
-		</section>
-		<section id="technologies" class="w-[100vw] min-h-[100vh] flex items-center bg-light text-primary">
-			<div class="absolute self-start w-[100vw] select-none uppercase text-[150px] md:text-[300px] font-bold opacity-10 text-primary leading-[100px] md:leading-[190px] break-words tracking-tighter">
-				technologies
-			</div>
-			<div id="icon-grid" class="grid z-10 grid-cols-3 sm:grid-cols-4 md:grid-cols-6 justify-end m-auto gap-6 md:gap-10 px-10 py-2">
-				<a title="HTML" href="https://html.spec.whatwg.org/multipage/" target="_blank" rel="noopener noreferrer"><img class="w-20 md:w-24" src="public/icons/html-5.png" alt="html" /></a>
-				<a title="CSS" href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank" rel="noopener noreferrer"><img class="w-20 md:w-24" src="public/icons/css-3.png" alt="css" /></a>
-				<a title="JavaScript" href="https://developer.mozilla.org/en-US/docs/Web/javascript" target="_blank" rel="noopener noreferrer"><img class="w-20 md:w-24" src="public/icons/js.png" alt="javascript" /></a>
-				<a title="Bootstrap" href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer"><img class="w-20 md:w-24" src="public/icons/bootstrap.png" alt="bootstrap" /></a>
-				<a title="Tailwind CSS" class="self-center" href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer"><img class="w-20 md:w-24" src="public/icons/tailwindcss.png" alt="tailwindcss" /></a>
-				<a title="MongoDB" href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer"><img class="w-20 md:w-24" src="public/icons/mongodb.png" alt="mongodb" /></a>
-				<a title="Express.js" href="https://expressjs.com/" target="_blank" rel="noopener noreferrer"><img class="w-20 md:w-24" src="public/icons/expressjs.png" alt="expressjs" /></a>
-				<a title="React.js" href="https://react.dev/" target="_blank" rel="noopener noreferrer"><img class="w-20 md:w-24" src="public/icons/react.png" alt="react" /></a>
-				<a title="Node.js" href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer"><img class="w-20 md:w-24" src="public/icons/node-js.png" alt="node-js" /></a>
-				<a title="NPM" href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer"><img class="w-20 md:w-24" src="public/icons/npm.svg" alt="npm" /></a>
-				<a title="TypeScript" href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer"><img class="w-20 md:w-24" src="public/icons/typescript.png" alt="typescript" /></a>
-				<a title="Git" href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"><img class="w-20 md:w-24" src="public/icons/git-icon.png" alt="git" /></a>
-				<a title="GitHub" href="https://github.com/" target="_blank" rel="noopener noreferrer"><img class="w-20 md:w-24" src="public/icons/github.png" alt="github" /></a>
-				<a title="VS Codium" href="https://vscodium.com/" target="_blank" rel="noopener noreferrer"><img class="w-20 md:w-24" src="public/icons/vscode.png" alt="vscode" /></a>
-				<a title="Geany" href="https://www.geany.org/" target="_blank" rel="noopener noreferrer"><img class="w-20 md:w-24" src="public/icons/geany.png" alt="geany" /></a>
-				<a title="Penpot" href="https://penpot.app/" target="_blank" rel="noopener noreferrer"><img class="w-20 md:w-24 rounded-xl" src="public/icons/penpot.png" alt="penpot" /></a>
-				<a title="Postman" href="https://www.postman.com/" target="_blank" rel="noopener noreferrer"><img class="w-20 md:w-24" src="public/icons/postman.png" alt="postman" /></a>
-				<a title="Vite" href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer"><img class="w-20 md:w-24" src="public/icons/vite.png" alt="vite" /></a>
-			</div>
-		</section>
-		<section id="works" class="w-[100vw] min-h-[100vh] flex items-center justify-center bg-primary text-light">
-			<div class="absolute self-start w-[100vw] select-none uppercase text-[150px] md:text-[300px] font-bold opacity-15 text-light leading-[100px] md:leading-[190px] break-words tracking-tighter">
-				works
-			</div>
-			<div id="works-container" class="flex w-[80dvw] h-[80dvh] overflow-y-auto lg:overflow-x-auto justify-center lg:items-center lg:justify-start">
-				<div class="p-20 flex flex-col lg:flex-row gap-12 lg:gap-32 ">
-					<!--MOVIE LIBRARY-->
-					<div class="flex flex-col items-center">
-						<a href="https://vid-lib-app.vercel.app/" class="hover:scale-110 transition" target="_blank" rel="noopener noreferrer">
-							<div id="laptop-outer">
-								<!-- I'm setting muted attribute here so that the video autoplays -->
-								<!-- I'm setting loop attribute here so that the video loops -->
-								<video muted loop data-video="video" src="public/videos/MovieLib.mp4"></video>
-								<div id="laptop-bottom"></div>
-								<div id="laptop-shadow"></div>
-							</div>
-						</a>
-						<div class="flex gap-4 mt-10 text-xl items-center justify-center">
-							<a href="https://vid-lib-app.vercel.app/" target="_blank" rel="noopener noreferrer"><span class="bi bi-eye"></span></a>
-							<span class="text-center">Movie Library</span>
-							<a href="https://github.com/bugsdev2/vidLibApp" target="_blank" rel="noopener noreferrer"><span class="bi bi-github"></span></a>
-						</div>
-					</div>
-					<!--STICKEEZ-->
-					<div class="flex flex-col items-center">
-						<a href="https://to-do-app-two-rust.vercel.app/" class="hover:scale-110 transition" target="_blank" rel="noopener noreferrer">
-							<div id="laptop-outer">
-								<video muted loop data-video="video" src="public/videos/Stickeez.mp4"></video>
-								<div id="laptop-bottom"></div>
-								<div id="laptop-shadow"></div>
-							</div>
-						</a>
-						<div class="flex gap-4 mt-10 text-xl items-center justify-center">
-							<a href="https://to-do-app-two-rust.vercel.app/" target="_blank" rel="noopener noreferrer"><span class="bi bi-eye"></span></a>
-							<span class="text-center">Stickeez</span>
-							<a href="https://github.com/bugsdev2/toDoApp" target="_blank" rel="noopener noreferrer"><span class="bi bi-github"></span></a>
-						</div>
-					</div>
-					<!--WORDLE-->
-					<div class="flex flex-col items-center">
-						<a href="https://bugsdev2.github.io/wordGame/" class="hover:scale-110 transition" target="_blank" rel="noopener noreferrer">
-							<div id="laptop-outer">
-								<video muted loop data-video="video" src="public/videos/Wordle.mp4"></video>
-								<div id="laptop-bottom"></div>
-								<div id="laptop-shadow"></div>
-							</div>
-						</a>
-						<div class="flex gap-4 mt-10 text-xl items-center justify-center">
-							<a href="https://bugsdev2.github.io/wordGame/" target="_blank" rel="noopener noreferrer"><span class="bi bi-eye"></span></a>
-							<span class="text-center">Wordle Clone</span>
-							<a href="https://github.com/bugsdev2/wordGame" target="_blank" rel="noopener noreferrer"><span class="bi bi-github"></span></a>
-						</div>
-					</div>
-					<!--DICTIONARY-->
-					<div class="flex flex-col items-center">
-						<a href="https://bugsdev2.github.io/todywen/" class="hover:scale-110 transition" target="_blank" rel="noopener noreferrer">
-							<div id="laptop-outer">
-								<video muted loop data-video="video" src="public/videos/Dictionary.mp4"></video>
-								<div id="laptop-bottom"></div>
-								<div id="laptop-shadow"></div>
-							</div>
-						</a>
-						<div class="flex gap-4 mt-10 text-xl items-center justify-center">
-							<a href="https://bugsdev2.github.io/todywen/" target="_blank" rel="noopener noreferrer"><span class="bi bi-eye"></span></a>
-							<span class="text-center">Dictionary</span>
-							<a href="https://github.com/bugsdev2/todywen" target="_blank" rel="noopener noreferrer"><span class="bi bi-github"></span></a>
-						</div>
-					</div>
-					<!--Etch-A-Sketch-->
-					<div class="flex flex-col items-center">
-						<a href="https://bugsdev2.github.io/etchasketch/" class="hover:scale-110 transition" target="_blank" rel="noopener noreferrer">
-							<div id="laptop-outer">
-								<video muted loop data-video="video" src="public/videos/EtchASketch.mp4"></video>
-								<div id="laptop-bottom"></div>
-								<div id="laptop-shadow"></div>
-							</div>
-						</a>
-						<div class="flex gap-4 mt-10 text-xl items-center justify-center">
-							<a href="https://bugsdev2.github.io/etchasketch/" target="_blank" rel="noopener noreferrer"><span class="bi bi-eye"></span></a>
-							<span class="text-center">Etch-A-Sketch</span>
-							<a href="https://github.com/bugsdev2/etchasketch" target="_blank" rel="noopener noreferrer"><span class="bi bi-github"></span></a>
-						</div>
-					</div>
-					<!--Book Tracker-->
-					<div class="flex flex-col items-center">
-						<a href="https://book-tracker-zeta.vercel.app/" class="hover:scale-110 transition" target="_blank" rel="noopener noreferrer">
-							<div id="laptop-outer">
-								<video muted loop data-video="video" src="public/videos/BookTracker.mp4"></video>
-								<div id="laptop-bottom"></div>
-								<div id="laptop-shadow"></div>
-							</div>
-						</a>
-						<div class="flex gap-4 mt-10 text-xl items-center justify-center">
-							<a href="https://book-tracker-zeta.vercel.app/" target="_blank" rel="noopener noreferrer"><span class="bi bi-eye"></span></a>
-							<span class="text-center">Book Tracker</span>
-							<a href="https://github.com/bugsdev2/bookTracker" target="_blank" rel="noopener noreferrer"><span class="bi bi-github"></span></a>
-						</div>
-					</div>
-					<!--Tic Tac Toe-->
-					<div class="flex flex-col items-center">
-						<a href="https://tic-tac-toe-kappa-tawny.vercel.app/" class="hover:scale-110 transition" target="_blank" rel="noopener noreferrer">
-							<div id="laptop-outer">
-								<video muted loop data-video="video" src="public/videos/TicTacToe.mp4"></video>
-								<div id="laptop-bottom"></div>
-								<div id="laptop-shadow"></div>
-							</div>
-						</a>
-						<div class="flex gap-4 mt-10 text-xl items-center justify-center">
-							<a href="https://tic-tac-toe-kappa-tawny.vercel.app/" target="_blank" rel="noopener noreferrer"><span class="bi bi-eye"></span></a>
-							<span class="text-center">Tic Tac Toe</span>
-							<a href="https://github.com/bugsdev2/ticTacToe" target="_blank" rel="noopener noreferrer"><span class="bi bi-github"></span></a>
-						</div>
-					</div>
-					<!--Mini Musical Keyboard-->
-					<div class="flex flex-col items-center">
-						<a href="https://bugsdev2.github.io/pianoDemo/" class="hover:scale-110 transition" target="_blank" rel="noopener noreferrer">
-							<div id="laptop-outer">
-								<video muted loop data-video="video" src="public/videos/MiniKeyboard.mp4"></video>
-								<div id="laptop-bottom"></div>
-								<div id="laptop-shadow"></div>
-							</div>
-						</a>
-						<div class="flex gap-4 mt-10 text-xl items-center justify-center">
-							<a href="https://bugsdev2.github.io/pianoDemo/" target="_blank" rel="noopener noreferrer"><span class="bi bi-eye"></span></a>
-							<span class="text-center">Mini Musical Keyboard</span>
-							<a href="https://github.com/bugsdev2/pianoDemo" target="_blank" rel="noopener noreferrer"><span class="bi bi-github"></span></a>
-						</div>
-					</div>
-					<!--Calculator-->
-					<div class="flex flex-col items-center">
-						<a href="https://bugsdev2.github.io/theOdinCalculator/" class="hover:scale-110 transition" target="_blank" rel="noopener noreferrer">
-							<div id="laptop-outer">
-								<video muted loop data-video="video" src="public/videos/Calculator.mp4"></video>
-								<div id="laptop-bottom"></div>
-								<div id="laptop-shadow"></div>
-							</div>
-						</a>
-						<div class="flex gap-4 mt-10 text-xl items-center justify-center">
-							<a href="https://bugsdev2.github.io/theOdinCalculator/" target="_blank" rel="noopener noreferrer"><span class="bi bi-eye"></span></a>
-							<span class="text-center">Calculator</span>
-							<a href="https://github.com/bugsdev2/theOdinCalculator" target="_blank" rel="noopener noreferrer"><span class="bi bi-github"></span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="contact" class="w-[100vw] min-h-[100vh] flex items-center justify-center bg-light text-primary">
-			<div class="absolute self-start w-[100vw] select-none uppercase text-[150px] md:text-[300px] font-bold opacity-15 text-primary leading-[100px] md:leading-[190px] break-words tracking-tighter">
-				contact
-			</div>
-			<div class="z-20 p-4 md:p-20 tracking-widest grid gap-4 md:grid-cols-2 leading-loose mt-8">
-				<div class="flex flex-col gap-1">
-					<h2 class="font-bold text-xl">Contact me</h2>
-					<p>Hello! If you're looking to bring your ideas to life with unique, customized, modern, and responsive websites and web apps, you're in the right place. Let's create something amazing together!</p>
-					<h2 class="font-bold text-xl">Services I Provide</h2>
-					<p>I offer a range of services to meet your web development needs, including:</p>
-					<ul class="list-disc">
-						<li><span class="font-bold">Unique and Customized Websites</span>: Tailored to your brand and vision, ensuring your online presence stands out.</li>
-						<li><span class="font-bold">Modern and Responsive Web Apps</span>: Designed to provide a seamless user experience across all devices.</li>
-						<li><span class="font-bold">API Integration and Development</span>: Connecting your website or app with external services to enhance functionality.</li>
-						<li><span class="font-bold">Maintenance and Support</span>: Ongoing support to keep your website or app running smoothly.</li>
-					</ul>
-				</div>
-				<div class="flex flex-col gap-2">
-					<h2 class="font-bold text-xl">Get in Touch</h2>
-					<p>I'm excited to hear about your project and how I can help. Feel free to reach out to me through any of the following methods:</p>
-					<div class="flex flex-col gap-2 border-y-2 border-primary py-2">
-						<div>
-							<p class="font-bold"><a href="mailto:adithyamanikumar@proton.me">Email: adithyamanikumar@proton.me</a></p>
-							<p class="cursor-grabbing" title="You sly fox! A'ight, I'm not that fast.">(Emails guaranteed to be answered faster than you can say "JavaScript!")</p>
-						</div>
-						<div>
-							<p class="font-bold"><a href="https://linkedin.com/in/adithya-m-pai-269437303" target="_blank" rel="noopener noreferrer">LinkedIn: www.linkedin.com/in/adithya-m-pai-269437303</a></p>
-							<p>(Let's connect and make my network look impressive.)</p>
-						</div>
-						<div>
-							<p class="font-bold"><a href="https://github.com/bugsdev2" target="_blank" rel="noopener noreferrer">GitHub: https://github.com/bugsdev2</a></p>
-							<p class="cursor-grabbing" title="If you are someone who has already seen my room, please don't tell anyone. My code isn't that bad. I Promise.">(Check out my code. It's as clean as my room &#128540;)</p>
-						</div>
-					</div>
-					<div>
-						<p>Whether you have a clear vision or need help figuring out the best approach, I'm here to assist you every step of the way. Let's turn your ideas into reality and have some fun doing it! <span class="cursor-grabbing" title="Hehe! You wish. I'm gonna bore you to death.">And I promise I won't  crack any joke.</span></p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<footer class="h-40 flex flex-col justify-center items-center bg-primaryDark text-slate-400 p-4 text-center">
-			<p>Designed in <a class="text-light" target="_blank" rel="noopener noreferrer" href="https://penpot.app/">Penpot</a> & coded in <a class="text-light" target="_blank" rel="noopener noreferrer" href="https://vscodium.com/">VSCodium</a>.</p>
-			<p>The icons used in this website are created by <a class="text-light" target="_blank" rel="noopener noreferrer" href="https://www.flaticon.com/free-icons/html">Freepik</a> & <a class="text-light" target="_blank" rel="noopener noreferrer" href="https://www.flaticon.com/free-icons/css3">Popcornarts</a> taken from from <a class="text-light"  target="_blank" rel="noopener noreferrer" href="https://www.flaticon.com/">FlatIcon</a>. </p>
-		</footer>
-	</div>
-	<script src="app.js" type="text/javascript"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Portfolio</title>
+        <link
+            rel="stylesheet"
+            href="output.css"
+        />
+        <link
+            rel="stylesheet"
+            href="style.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+    </head>
+    <body class="bg-light">
+        <div class="fixed bottom-5 left-3 text-2xl text-primaryDark bg-[rgba(234,234,234,0.5)] flex flex-col gap-3 py-4 px-1 rounded-full z-40">
+            <a
+                title="GitHub"
+                href="https://github.com/bugsdev2"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="bi bi-github"></span
+            ></a>
+            <a
+                title="LinkedIn"
+                href="https://linkedin.com/in/adithya-m-pai-269437303"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="bi bi-linkedin"></span
+            ></a>
+            <a
+                title="Mail"
+                href="mailto:adithyamanikumar@proton.me"
+                ><span class="bi bi-envelope"></span
+            ></a>
+        </div>
+        <nav
+            data-menu="menu"
+            id="sm-screen-nav"
+            class="hidden fixed top-0 left-0 bottom-0 bg-primary p-4 py-10 z-30"
+        >
+            <ul
+                data-menu="menu"
+                class="flex flex-col gap-3 uppercase text-light"
+            >
+                <li>
+                    <a
+                        href="#home"
+                        data-menu="menu"
+                        >home</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#about"
+                        data-menu="menu"
+                        >about me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#technologies"
+                        data-menu="menu"
+                        >technologies</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#works"
+                        data-menu="menu"
+                        >works</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#contact"
+                        data-menu="menu"
+                        >contact</a
+                    >
+                </li>
+            </ul>
+        </nav>
+        <div id="container">
+            <main
+                id="home"
+                class="h-[100vh] w-[100vw] flex flex-col"
+            >
+                <nav
+                    id="nav"
+                    class="flex justify-center mt-4"
+                >
+                    <button
+                        data-menu="menu"
+                        id="sm-menu-btn"
+                        class="sm:hidden fixed left-3 px-1 bg-[rgba(234,234,234,0.5)] rounded-full text-primary text-2xl z-20"
+                    >
+                        <span
+                            data-menu="menu"
+                            class="bi bi-list"
+                        ></span>
+                    </button>
+                    <ul class="fixed z-30 hidden sm:flex gap-8 md:gap-12 bg-primary py-1 px-16 md:px-24 rounded-full text-light uppercase">
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#about">about me</a></li>
+                        <li><a href="#technologies">technologies</a></li>
+                        <li><a href="#works">works</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+                <div class="h-full flex justify-center items-center">
+                    <div class="flex flex-col-reverse flex-reverse md:flex-row items-center justify-center gap-5 md:gap-24 mt-4 p-6">
+                        <div class="text-primaryDark text-4xl flex flex-col gap-3">
+                            <p>hi</p>
+                            <p>i'm adithya</p>
+                            <p>web developer</p>
+                            <a
+                                id="contact-btn"
+                                class="btn-outline text-lg self-center mt-3"
+                                href="#contact"
+                                >contact me</a
+                            >
+                        </div>
+                        <div class="w-1/2 md:w-1/3">
+                            <img
+                                class="rounded-full"
+                                src="public/images/profilePic.jpg"
+                                alt="profile-picture-of-user"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <section
+                id="about"
+                class="w-[100vw] min-h-[100vh] flex items-center bg-primary text-light"
+            >
+                <div class="absolute self-start w-[100vw] select-none uppercase text-[150px] md:text-[300px] font-bold opacity-15 text-light leading-[100px] md:leading-[190px] break-words tracking-tighter">about</div>
+                <div class="p-4 md:p-20 tracking-widest grid gap-6 leading-loose">
+                    <p>My journey into the world of web development began with a curiosity for how websites work and a drive to create engaging digital experiences. Through self-study and formal education, I have built a solid foundation in HTML, CSS, JavaScript, and the MERN stack (MongoDB, Express.js, React, Node.js). My love for coding is matched only by my love for coffee—lots and lots of coffee.</p>
+                    <p>I've dedicated my time to learning and mastering the intricacies of web development, focusing on creating dynamic and responsive web applications. I'm currently on the lookout for freelance opportunities where I can bring your ideas to life (and maybe make a few bad jokes along the way).</p>
+                </div>
+            </section>
+            <section
+                id="technologies"
+                class="w-[100vw] min-h-[100vh] flex items-center bg-light text-primary"
+            >
+                <div class="absolute self-start w-[100vw] select-none uppercase text-[150px] md:text-[300px] font-bold opacity-10 text-primary leading-[100px] md:leading-[190px] break-words tracking-tighter">technologies</div>
+                <div
+                    id="icon-grid"
+                    class="grid z-10 grid-cols-3 sm:grid-cols-4 md:grid-cols-6 justify-end m-auto gap-6 md:gap-10 px-10 py-2"
+                >
+                    <a
+                        title="HTML"
+                        href="https://html.spec.whatwg.org/multipage/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/html-5.png"
+                            alt="html"
+                    /></a>
+                    <a
+                        title="CSS"
+                        href="https://www.w3.org/Style/CSS/Overview.en.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/css-3.png"
+                            alt="css"
+                    /></a>
+
+                    <a
+                        title="JavaScript"
+                        href="https://developer.mozilla.org/en-US/docs/Web/javascript"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/js.png"
+                            alt="javascript"
+                    /></a>
+
+                    <a
+                        title="Bootstrap"
+                        href="https://getbootstrap.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/bootstrap.png"
+                            alt="bootstrap"
+                    /></a>
+                    <a
+                        title="Tailwind CSS"
+                        class="self-center"
+                        href="https://tailwindcss.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/tailwindcss.png"
+                            alt="tailwindcss"
+                    /></a>
+                    <a
+                        title="MongoDB"
+                        href="https://www.mongodb.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/mongodb.png"
+                            alt="mongodb"
+                    /></a>
+                    <a
+                        title="Express.js"
+                        href="https://expressjs.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/expressjs.png"
+                            alt="expressjs"
+                    /></a>
+                    <a
+                        title="React.js"
+                        href="https://react.dev/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/react.png"
+                            alt="react"
+                    /></a>
+                    <a
+                        title="Node.js"
+                        href="https://nodejs.org/en"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/node-js.png"
+                            alt="node-js"
+                    /></a>
+                    <a
+                        title="NPM"
+                        href="https://www.npmjs.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/npm.svg"
+                            alt="npm"
+                    /></a>
+                    <a
+                        title="TypeScript"
+                        href="https://www.typescriptlang.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/typescript.png"
+                            alt="typescript"
+                    /></a>
+                    <a
+                        title="Git"
+                        href="https://git-scm.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/git-icon.png"
+                            alt="git"
+                    /></a>
+                    <a
+                        title="GitHub"
+                        href="https://github.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/github.png"
+                            alt="github"
+                    /></a>
+                    <a
+                        title="VS Codium"
+                        href="https://vscodium.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/vscode.png"
+                            alt="vscode"
+                    /></a>
+                    <a
+                        title="Geany"
+                        href="https://www.geany.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/geany.png"
+                            alt="geany"
+                    /></a>
+                    <a
+                        title="Penpot"
+                        href="https://penpot.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24 rounded-xl"
+                            src="public/icons/penpot.png"
+                            alt="penpot"
+                    /></a>
+                    <a
+                        title="Postman"
+                        href="https://www.postman.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/postman.png"
+                            alt="postman"
+                    /></a>
+                    <a
+                        title="Vite"
+                        href="https://vitejs.dev/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/vite.png"
+                            alt="vite"
+                    /></a>
+                    <a
+                        title="React Native"
+                        href="https://reactnative.dev/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/react-native.png"
+                            alt="react native"
+                    /></a>
+                    <a
+                        title="Expo"
+                        href="https://docs.expo.dev/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="w-20 md:w-24"
+                            src="public/icons/expo.png"
+                            alt="react native"
+                    /></a>
+                </div>
+            </section>
+            <section
+                id="works"
+                class="w-[100vw] min-h-[100vh] flex items-center justify-center bg-primary text-light"
+            >
+                <div class="absolute self-start w-[100vw] select-none uppercase text-[150px] md:text-[300px] font-bold opacity-15 text-light leading-[100px] md:leading-[190px] break-words tracking-tighter">works</div>
+                <div
+                    id="works-container"
+                    class="flex w-[80dvw] h-[80dvh] overflow-y-auto lg:overflow-x-auto justify-center lg:items-end lg:justify-start z-10"
+                >
+                    <div class="p-20 flex flex-col lg:flex-row gap-12 lg:items-center lg:gap-32">
+                        <!--CLOUD COMPASS-->
+                        <div class="flex flex-col items-center">
+                            <a
+                                href="https://github.com/bugsdev2/whether"
+                                class="hover:scale-110 transition flex justify-center"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div id="mobile-outer">
+                                    <div id="mobile-inner">
+                                        <img
+                                            src="./public/images/mobile.png"
+                                            alt="mobile_video_demo"
+                                        />
+                                        <div id="camera"></div>
+                                    </div>
+                                    <div id="mobile-shadow"></div>
+                                </div>
+                            </a>
+                            <div class="flex gap-4 mt-3 text-xl items-center justify-center">
+                                <a
+                                    href="https://github.com/bugsdev2/whether"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-eye"></span
+                                ></a>
+                                <span class="text-center">Cloud Compass</span>
+                                <a
+                                    href="https://github.com/bugsdev2/whether"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-github"></span
+                                ></a>
+                            </div>
+                        </div>
+                        <!--MOVIE LIBRARY-->
+                        <div class="flex flex-col items-center">
+                            <a
+                                href="https://vid-lib-app.vercel.app/"
+                                class="hover:scale-110 transition"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div id="laptop-outer">
+                                    <!-- I'm setting muted attribute here so that the video autoplays -->
+                                    <!-- I'm setting loop attribute here so that the video loops -->
+                                    <video
+                                        muted
+                                        loop
+                                        data-video="video"
+                                        src="public/videos/MovieLib.mp4"
+                                    ></video>
+                                    <div id="laptop-bottom"></div>
+                                    <div id="laptop-shadow"></div>
+                                </div>
+                            </a>
+                            <div class="flex gap-4 mt-10 text-xl items-center justify-center">
+                                <a
+                                    href="https://vid-lib-app.vercel.app/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-eye"></span
+                                ></a>
+                                <span class="text-center">Movie Library</span>
+                                <a
+                                    href="https://github.com/bugsdev2/vidLibApp"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-github"></span
+                                ></a>
+                            </div>
+                        </div>
+                        <!--STICKEEZ-->
+                        <div class="flex flex-col items-center">
+                            <a
+                                href="https://to-do-app-two-rust.vercel.app/"
+                                class="hover:scale-110 transition"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div id="laptop-outer">
+                                    <video
+                                        muted
+                                        loop
+                                        data-video="video"
+                                        src="public/videos/Stickeez.mp4"
+                                    ></video>
+                                    <div id="laptop-bottom"></div>
+                                    <div id="laptop-shadow"></div>
+                                </div>
+                            </a>
+                            <div class="flex gap-4 mt-10 text-xl items-center justify-center">
+                                <a
+                                    href="https://to-do-app-two-rust.vercel.app/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-eye"></span
+                                ></a>
+                                <span class="text-center">Stickeez</span>
+                                <a
+                                    href="https://github.com/bugsdev2/toDoApp"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-github"></span
+                                ></a>
+                            </div>
+                        </div>
+                        <!--WORDLE-->
+                        <div class="flex flex-col items-center">
+                            <a
+                                href="https://bugsdev2.github.io/wordGame/"
+                                class="hover:scale-110 transition"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div id="laptop-outer">
+                                    <video
+                                        muted
+                                        loop
+                                        data-video="video"
+                                        src="public/videos/Wordle.mp4"
+                                    ></video>
+                                    <div id="laptop-bottom"></div>
+                                    <div id="laptop-shadow"></div>
+                                </div>
+                            </a>
+                            <div class="flex gap-4 mt-10 text-xl items-center justify-center">
+                                <a
+                                    href="https://bugsdev2.github.io/wordGame/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-eye"></span
+                                ></a>
+                                <span class="text-center">Wordle Clone</span>
+                                <a
+                                    href="https://github.com/bugsdev2/wordGame"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-github"></span
+                                ></a>
+                            </div>
+                        </div>
+                        <!--DICTIONARY-->
+                        <div class="flex flex-col items-center">
+                            <a
+                                href="https://bugsdev2.github.io/todywen/"
+                                class="hover:scale-110 transition"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div id="laptop-outer">
+                                    <video
+                                        muted
+                                        loop
+                                        data-video="video"
+                                        src="public/videos/Dictionary.mp4"
+                                    ></video>
+                                    <div id="laptop-bottom"></div>
+                                    <div id="laptop-shadow"></div>
+                                </div>
+                            </a>
+                            <div class="flex gap-4 mt-10 text-xl items-center justify-center">
+                                <a
+                                    href="https://bugsdev2.github.io/todywen/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-eye"></span
+                                ></a>
+                                <span class="text-center">Dictionary</span>
+                                <a
+                                    href="https://github.com/bugsdev2/todywen"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-github"></span
+                                ></a>
+                            </div>
+                        </div>
+                        <!--Etch-A-Sketch-->
+                        <div class="flex flex-col items-center">
+                            <a
+                                href="https://bugsdev2.github.io/etchasketch/"
+                                class="hover:scale-110 transition"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div id="laptop-outer">
+                                    <video
+                                        muted
+                                        loop
+                                        data-video="video"
+                                        src="public/videos/EtchASketch.mp4"
+                                    ></video>
+                                    <div id="laptop-bottom"></div>
+                                    <div id="laptop-shadow"></div>
+                                </div>
+                            </a>
+                            <div class="flex gap-4 mt-10 text-xl items-center justify-center">
+                                <a
+                                    href="https://bugsdev2.github.io/etchasketch/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-eye"></span
+                                ></a>
+                                <span class="text-center">Etch-A-Sketch</span>
+                                <a
+                                    href="https://github.com/bugsdev2/etchasketch"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-github"></span
+                                ></a>
+                            </div>
+                        </div>
+                        <!--Book Tracker-->
+                        <div class="flex flex-col items-center">
+                            <a
+                                href="https://book-tracker-zeta.vercel.app/"
+                                class="hover:scale-110 transition"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div id="laptop-outer">
+                                    <video
+                                        muted
+                                        loop
+                                        data-video="video"
+                                        src="public/videos/BookTracker.mp4"
+                                    ></video>
+                                    <div id="laptop-bottom"></div>
+                                    <div id="laptop-shadow"></div>
+                                </div>
+                            </a>
+                            <div class="flex gap-4 mt-10 text-xl items-center justify-center">
+                                <a
+                                    href="https://book-tracker-zeta.vercel.app/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-eye"></span
+                                ></a>
+                                <span class="text-center">Book Tracker</span>
+                                <a
+                                    href="https://github.com/bugsdev2/bookTracker"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-github"></span
+                                ></a>
+                            </div>
+                        </div>
+                        <!--Tic Tac Toe-->
+                        <div class="flex flex-col items-center">
+                            <a
+                                href="https://tic-tac-toe-kappa-tawny.vercel.app/"
+                                class="hover:scale-110 transition"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div id="laptop-outer">
+                                    <video
+                                        muted
+                                        loop
+                                        data-video="video"
+                                        src="public/videos/TicTacToe.mp4"
+                                    ></video>
+                                    <div id="laptop-bottom"></div>
+                                    <div id="laptop-shadow"></div>
+                                </div>
+                            </a>
+                            <div class="flex gap-4 mt-10 text-xl items-center justify-center">
+                                <a
+                                    href="https://tic-tac-toe-kappa-tawny.vercel.app/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-eye"></span
+                                ></a>
+                                <span class="text-center">Tic Tac Toe</span>
+                                <a
+                                    href="https://github.com/bugsdev2/ticTacToe"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-github"></span
+                                ></a>
+                            </div>
+                        </div>
+                        <!--Mini Musical Keyboard-->
+                        <div class="flex flex-col items-center">
+                            <a
+                                href="https://bugsdev2.github.io/pianoDemo/"
+                                class="hover:scale-110 transition"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div id="laptop-outer">
+                                    <video
+                                        muted
+                                        loop
+                                        data-video="video"
+                                        src="public/videos/MiniKeyboard.mp4"
+                                    ></video>
+                                    <div id="laptop-bottom"></div>
+                                    <div id="laptop-shadow"></div>
+                                </div>
+                            </a>
+                            <div class="flex gap-4 mt-10 text-xl items-center justify-center">
+                                <a
+                                    href="https://bugsdev2.github.io/pianoDemo/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-eye"></span
+                                ></a>
+                                <span class="text-center">Mini Musical Keyboard</span>
+                                <a
+                                    href="https://github.com/bugsdev2/pianoDemo"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-github"></span
+                                ></a>
+                            </div>
+                        </div>
+                        <!--Calculator-->
+                        <div class="flex flex-col items-center">
+                            <a
+                                href="https://bugsdev2.github.io/theOdinCalculator/"
+                                class="hover:scale-110 transition"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div id="laptop-outer">
+                                    <video
+                                        muted
+                                        loop
+                                        data-video="video"
+                                        src="public/videos/Calculator.mp4"
+                                    ></video>
+                                    <div id="laptop-bottom"></div>
+                                    <div id="laptop-shadow"></div>
+                                </div>
+                            </a>
+                            <div class="flex gap-4 mt-10 text-xl items-center justify-center">
+                                <a
+                                    href="https://bugsdev2.github.io/theOdinCalculator/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-eye"></span
+                                ></a>
+                                <span class="text-center">Calculator</span>
+                                <a
+                                    href="https://github.com/bugsdev2/theOdinCalculator"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    ><span class="bi bi-github"></span
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section
+                id="contact"
+                class="w-[100vw] min-h-[100vh] flex items-center justify-center bg-light text-primary"
+            >
+                <div class="absolute self-start w-[100vw] select-none uppercase text-[150px] md:text-[300px] font-bold opacity-15 text-primary leading-[100px] md:leading-[190px] break-words tracking-tighter">contact</div>
+                <div class="z-20 p-4 md:p-20 tracking-widest grid gap-4 md:grid-cols-2 leading-loose mt-8">
+                    <div class="flex flex-col gap-1">
+                        <h2 class="font-bold text-xl">Contact me</h2>
+                        <p>Hello! If you're looking to bring your ideas to life with unique, customized, modern, and responsive websites and web apps, you're in the right place. Let's create something amazing together!</p>
+                        <h2 class="font-bold text-xl">Services I Provide</h2>
+                        <p>I offer a range of services to meet your web development needs, including:</p>
+                        <ul class="list-disc">
+                            <li><span class="font-bold">Unique and Customized Websites</span>: Tailored to your brand and vision, ensuring your online presence stands out.</li>
+                            <li><span class="font-bold">Modern and Responsive Web Apps</span>: Designed to provide a seamless user experience across all devices.</li>
+                            <li><span class="font-bold">API Integration and Development</span>: Connecting your website or app with external services to enhance functionality.</li>
+                            <li><span class="font-bold">Maintenance and Support</span>: Ongoing support to keep your website or app running smoothly.</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h2 class="font-bold text-xl">Get in Touch</h2>
+                        <p>I'm excited to hear about your project and how I can help. Feel free to reach out to me through any of the following methods:</p>
+                        <div class="flex flex-col gap-2 border-y-2 border-primary py-2">
+                            <div>
+                                <p class="font-bold"><a href="mailto:adithyamanikumar@proton.me">Email: adithyamanikumar@proton.me</a></p>
+                                <p
+                                    class="cursor-grabbing"
+                                    title="You sly fox! A'ight, I'm not that fast."
+                                >
+                                    (Emails guaranteed to be answered faster than you can say "JavaScript!")
+                                </p>
+                            </div>
+                            <div>
+                                <p class="font-bold">
+                                    <a
+                                        href="https://linkedin.com/in/adithya-m-pai-269437303"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >LinkedIn: www.linkedin.com/in/adithya-m-pai-269437303</a
+                                    >
+                                </p>
+                                <p>(Let's connect and make my network look impressive.)</p>
+                            </div>
+                            <div>
+                                <p class="font-bold">
+                                    <a
+                                        href="https://github.com/bugsdev2"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >GitHub: https://github.com/bugsdev2</a
+                                    >
+                                </p>
+                                <p
+                                    class="cursor-grabbing"
+                                    title="If you are someone who has already seen my room, please don't tell anyone. My code isn't that bad. I Promise."
+                                >
+                                    (Check out my code. It's as clean as my room &#128540;)
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                Whether you have a clear vision or need help figuring out the best approach, I'm here to assist you every step of the way. Let's turn your ideas into reality and have some fun doing it!
+                                <span
+                                    class="cursor-grabbing"
+                                    title="Hehe! You wish. I'm gonna bore you to death."
+                                    >And I promise I won't crack any joke.</span
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="h-40 flex flex-col justify-center items-center bg-primaryDark text-slate-400 p-4 text-center">
+                <p>
+                    Designed in
+                    <a
+                        class="text-light"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://penpot.app/"
+                        >Penpot</a
+                    >
+                    & coded in
+                    <a
+                        class="text-light"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://vscodium.com/"
+                        >VSCodium</a
+                    >.
+                </p>
+                <p>
+                    The icons used in this website are created by
+                    <a
+                        class="text-light"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.flaticon.com/free-icons/html"
+                        >Freepik</a
+                    >
+                    &
+                    <a
+                        class="text-light"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.flaticon.com/free-icons/css3"
+                        >Popcornarts</a
+                    >
+                    taken from from
+                    <a
+                        class="text-light"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.flaticon.com/"
+                        >FlatIcon</a
+                    >.
+                </p>
+            </footer>
+        </div>
+        <script
+            src="app.js"
+            type="text/javascript"
+        ></script>
+    </body>
 </html>
